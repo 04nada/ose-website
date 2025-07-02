@@ -10,6 +10,6 @@
     <a class="{className} flex flex-row font-display" href={route}>
         <span class="">
         </span>
-        <p class="sm:font-bold">{navName}</p>
+        <p class="sm:font-medium text-textcolor">{navName}</p>
     </a>
 </div>

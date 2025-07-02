@@ -3,7 +3,7 @@
 </script>
 
 <nav>
-    <div class="flex flex-row sm:gap-5 w-full bg-bgred font-sans">
+    <div class="flex flex-row sm:gap-5 w-[90%] bg-bgred font-sans mt-5 mx-auto rounded-md justify-evenly items-center">
         <NavItem navName="Home" route="/"/>
         <NavItem navName="News" route="/news/"/>
         <NavItem navName="Resources" route="/resources/"/>
