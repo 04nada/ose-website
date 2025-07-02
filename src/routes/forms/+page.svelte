@@ -10,20 +10,27 @@
             title: 'Request for Hard Copy of Documents',
             embedSrc: 'https://docs.google.com/forms/d/e/1FAIpQLSfjaaLJXyCxvJsoPg7xMFh8MtqhMGLg_NYiFCmtdR_YFhMPbg/viewform?embedded=true'
         }
-    ]
+    ];
+
+    let selectedForm = $state(0);
 </script>
 
 <Nav />
 
-<!-- todo 1: do not use #each; select the right embed -->
-<!-- todo 2: find a way to dynamically choose what to embed (not just iframe) -->
-{#each forms as form}
+{#each forms as form, i}
+<button
+    onclick={() => selectedForm = i}
+>
+    {form.title}
+</button>
+{/each}
+
+<!-- todo: find a way to dynamically choose what to embed (not just an iframe) -->   
 <iframe
-    src={form.embedSrc}
+    src={forms[selectedForm].embedSrc}
     width=640 height=800
     frameborder="0" marginheight="0" marginwidth="0"
-    title={form.title}
+    title={forms[selectedForm].title}
 >
     Loading...
 </iframe>
-{/each}
