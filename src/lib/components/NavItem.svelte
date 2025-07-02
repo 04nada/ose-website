@@ -7,7 +7,7 @@
 </script>
 
 <div>
-    <a class="{className} flex flex-row" href={route}>
+    <a class="{className} flex flex-row font-display" href={route}>
         <span class="">
         </span>
         <p class="sm:font-bold">{navName}</p>
