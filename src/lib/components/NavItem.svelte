@@ -18,7 +18,7 @@
 
   {#if isActive}
     <span
-    class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[150px] h-[1.5px] bg-yellow-400"
+    class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[150px] h-[1.5px] bg-[#EDAE1A]"
   ></span>
   {/if}
 </div>
