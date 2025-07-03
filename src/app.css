@@ -207,12 +207,24 @@
 .styled-buttons {
   background-color: #00573E;
   color:#F2F2F2;
-  border: none;
+  border: 2px solid #00573E;
   padding: 10px 20px 10px 20px;
   font-size: 24px;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+
+.styled-buttons[aria-current="true"] {
+  background-color: #023a2a;
+  color:#F2F2F2;
+  border: 2px solid #EDAE1A;
+  padding: 10px 20px 10px 20px;
+  font-size: 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition-property: background-color, border;
+  transition-duration: 0.3s;
 }
 
 .header {

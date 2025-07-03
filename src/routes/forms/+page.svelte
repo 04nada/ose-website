@@ -24,11 +24,11 @@
             Forms
         </h1>
             {#each Object.entries(forms) as [id, form]}
-                <button class="styled-buttons poppins-light"
-                    onclick={() => selectedForm = id}
-                >
-                    {form.title}
-                </button>
+                    <button class="styled-buttons poppins-light" aria-current={selectedForm === id}
+                        onclick={() => selectedForm = id}
+                    >
+                        {form.title}
+                    </button>
             {/each}
     </div>
     <div>

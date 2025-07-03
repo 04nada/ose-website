@@ -13,14 +13,20 @@
 </script>
 
 <Nav />
-<div> 
-    <div>
+
+<div class="flex flex-row center justify-evenly items-center">
+    <div class="flex flex-col width-restriction space-y-10">
+        <h1 class = "header playfair-bold">
+            Resources
+        </h1>
         {#each Object.entries(resources) as [id, resource]}
-        <button
-            onclick={() => selectedResource = id}
-        >
-            {resource.title}
-        </button>
+        <li>
+            <button class="styled-buttons poppins-light" aria-current={selectedResource === id}
+                onclick={() => selectedResource = id}
+            >
+                {resource.title}
+            </button>
+        </li>
         {/each}
     </div>
 
