@@ -1,15 +1,24 @@
-<script>
-    let className = '';
-    export {className as class};
-    // export let image;
-    export let navName;
-    export let route;
+<script lang="ts">
+  import { page } from '$app/stores';
+
+  let className = '';
+  export { className as class };
+  export let navName: string;
+  export let route: string;
+
+  $: isActive = route === '/'
+    ? $page.url.pathname === '/'
+    : $page.url.pathname.startsWith(route);
 </script>
 
-<div>
-    <a class="{className} flex flex-row font-display" href={route}>
-        <span class="">
-        </span>
-        <p class="sm:font-medium text-textcolor">{navName}</p>
-    </a>
+<div class="relative">
+  <a class="{className} flex flex-row font-display" href={route}>
+    <p class="sm:font-medium text-textcolor">{navName}</p>
+  </a>
+
+  {#if isActive}
+    <span
+    class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[150px] h-[1.5px] bg-yellow-400"
+  ></span>
+  {/if}
 </div>
