@@ -13,24 +13,29 @@
 </script>
 
 <Nav />
+<div> 
+    <div>
+        {#each Object.entries(resources) as [id, resource]}
+        <button
+            onclick={() => selectedResource = id}
+        >
+            {resource.title}
+        </button>
+        {/each}
+    </div>
 
-{#each Object.entries(resources) as [id, resource]}
-<button
-    onclick={() => selectedResource = id}
->
-    {resource.title}
-</button>
-{/each}
-
-{#if selectedResource == 'studentconduct2012'}
-    <iframe
-        src={resources[selectedResource].embedSrc}
-        width=640 height=800
-        frameborder="1" marginheight="0" marginwidth="0"
-        title={resources[selectedResource].title}
-    >
-        Loading...
-    </iframe>
-{:else}
-    <p> Invalid resource selected. </p>
-{/if}
+    <div>
+        {#if selectedResource == 'studentconduct2012'}
+            <iframe
+                src={resources[selectedResource].embedSrc}
+                width=640 height=800
+                frameborder="1" marginheight="0" marginwidth="0"
+                title={resources[selectedResource].title}
+            >
+                Loading...
+            </iframe>
+        {:else}
+            <p> Invalid resource selected. </p>
+        {/if}
+    </div>    
+</div>

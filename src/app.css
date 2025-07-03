@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import 'tailwindcss';
 
@@ -13,6 +14,7 @@
   --color-bgred: #8c143a;
   --color-bggreen: #00573E;
   --font-display: "Poppins", sans-serif;
+  --font-header: "Playfair", sans-serif;
   --color-textcolor: #E5E1E1;
 }
 
@@ -122,4 +124,98 @@
   font-family: "Poppins", sans-serif;
   font-weight: 900;
   font-style: italic;
+}
+
+.playfair-regular {
+  font-family: "Playfair", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.playfair-medium {
+  font-family: "Playfair", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.playfair-semibold {
+  font-family: "Playfair", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.playfair-bold {
+  font-family: "Playfair", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.playfair-extrabold {
+  font-family: "Playfair", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.playfair-black {
+  font-family: "Playfair", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.playfair-regular-italic {
+  font-family: "Playfair", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.playfair-medium-italic {
+  font-family: "Playfair", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.playfair-semibold-italic {
+  font-family: "Playfair", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.playfair-bold-italic {
+  font-family: "Playfair", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.playfair-extrabold-italic {
+  font-family: "Playfair", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.playfair-black-italic {
+  font-family: "Playfair", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.width-restriction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.styled-buttons {
+  background-color: #00573E;
+  color:#F2F2F2;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  font-size: 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.header {
+  color:#F2F2F2;
+  font-size: 48px;
 }
