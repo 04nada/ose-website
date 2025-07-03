@@ -7,45 +7,49 @@
 
 <Nav />
 
-<div class="flex flex-row justify-between items-start w-[90%] mx-auto mt-10">
-  <div class="flex-shrink-0">
-    <div>
-      <h1 class="text-2xl font-bold">Meet the Team</h1>
+<div id="main_text">
+    <div class="flex flex-row justify-between items-start w-[90%] mx-auto mt-10">
+    <div class="flex-shrink-0">
+        <div>
+        <h1 class="text-2xl font-bold">Meet the Team</h1>
+        </div>
     </div>
-  </div>
 
-  <div class="flex flex-col gap-8">
-  <div>
-    <h1 class="text-2xl font-bold mb-4">Contact Us</h1>
-    <ul class="space-y-5">
-      <li>0981 850 0450 / 89818500 loc 4509</li>
-      <li>ose.upd@up.edu.ph</li>
-      <li>
-        Address: Room 201, Office for Student Ethics, Vinzons Hall, Diliman,
-        Quezon City, Metro Manila
-      </li>
-    </ul>
-  </div>
+    <div class="flex flex-col gap-8">
+    <div>
+        <h1 class="text-2xl font-bold mb-4">Contact Us</h1>
+        <ul class="space-y-5">
+        <li>0981 850 0450 / 89818500 loc 4509</li>
+        <li>ose.upd@up.edu.ph</li>
+        <li>
+            Address: Room 201, Office for Student Ethics, Vinzons Hall, Diliman,
+            Quezon City, Metro Manila
+        </li>
+        </ul>
+    </div>
 
-  <iframe
-    src={oseMap}
-    width="500"
-    height="400"
-    class="rounded shadow"
-    style="border:0;"
-    allowfullscreen
-    loading="lazy"
-    title="A display of the location of the Office for Student Ethics (OSE) in Google Maps"
-  ></iframe>
-</div>
+    <iframe
+        src={oseMap}
+        width="500"
+        height="400"
+        class="rounded shadow"
+        style="border:0;"
+        allowfullscreen
+        loading="lazy"
+        title="A display of the location of the Office for Student Ethics (OSE) in Google Maps"
+    ></iframe>
+    </div>
+    </div>
 </div>
 
 <style>
     * {
         color: white;
+        font-family: 'Times New Roman', 'Times New Roman', Times, serif;
     }
 
-    * {
-        font-family: 'Times New Roman', 'Times New Roman', Times, serif;
+    #main_text {
+        margin-right: 5rem;
+        margin-left: 5rem;
     }
 </style>
