@@ -18,7 +18,7 @@
 </script>
 
 <Nav />
-<div class="flex flex-row center justify-evenly items-center">
+<div class="flex flex-row center justify-evenly items-center mt-10">
     <div class="flex flex-col width-restriction space-y-10">
         <h1 class = "header merriweather-bold">
             Forms
