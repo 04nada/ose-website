@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import 'tailwindcss';
 
@@ -14,7 +14,7 @@
   --color-bgred: #8c143a;
   --color-bggreen: #00573E;
   --font-display: "Poppins", sans-serif;
-  --font-header: "Playfair", sans-serif;
+  --font-header: "Merriweather", sans-serif;
   --color-textcolor: #E5E1E1;
 }
 
@@ -126,76 +126,118 @@
   font-style: italic;
 }
 
-.playfair-regular {
-  font-family: "Playfair", sans-serif;
+.playfair-display-regular {
+  font-family: "Playfair Display", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.playfair-medium {
-  font-family: "Playfair", sans-serif;
+.playfair-display-medium {
+  font-family: "Playfair Display", sans-serif;
   font-weight: 500;
   font-style: normal;
 }
 
-.playfair-semibold {
-  font-family: "Playfair", sans-serif;
+.playfair-display-semibold {
+  font-family: "Playfair Display", sans-serif;
   font-weight: 600;
   font-style: normal;
 }
 
-.playfair-bold {
-  font-family: "Playfair", sans-serif;
+.playfair-display-bold {
+  font-family: "Playfair Display", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
-.playfair-extrabold {
-  font-family: "Playfair", sans-serif;
+.playfair-display-extrabold {
+  font-family: "PlayfairDisplay", sans-serif;
   font-weight: 800;
   font-style: normal;
 }
 
-.playfair-black {
-  font-family: "Playfair", sans-serif;
+.playfair-display-black {
+  font-family: "PlayfairDisplay", sans-serif;
   font-weight: 900;
   font-style: normal;
 }
 
-.playfair-regular-italic {
-  font-family: "Playfair", sans-serif;
+.playfair-display-regular-italic {
+  font-family: "Playfair Display", sans-serif;
   font-weight: 400;
   font-style: italic;
 }
 
-.playfair-medium-italic {
-  font-family: "Playfair", sans-serif;
+.playfair-display-medium-italic {
+  font-family: "Playfair Display", sans-serif;
   font-weight: 500;
   font-style: italic;
 }
 
-.playfair-semibold-italic {
-  font-family: "Playfair", sans-serif;
+.playfair-display-semibold-italic {
+  font-family: "Playfair Display", sans-serif;
   font-weight: 600;
   font-style: italic;
 }
 
-.playfair-bold-italic {
-  font-family: "Playfair", sans-serif;
+.playfair-display-bold-italic {
+  font-family: "Playfair Display", sans-serif;
   font-weight: 700;
   font-style: italic;
 }
 
-.playfair-extrabold-italic {
-  font-family: "Playfair", sans-serif;
+.playfair-display-extrabold-italic {
+  font-family: "Playfair Display", sans-serif;
   font-weight: 800;
   font-style: italic;
 }
 
-.playfair-black-italic {
-  font-family: "Playfair", sans-serif;
+.playfair-display-black-italic {
+  font-family: "Playfair Display", sans-serif;
   font-weight: 900;
   font-style: italic;
+}
+
+.merriweather-light {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.merriweather-regular {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.merriweather-medium {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.merriweather-semibold {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.merriweather-bold {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.merriweather-extrabold {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.merriweather-black {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 
 .width-restriction {
@@ -212,7 +254,7 @@
   font-size: 24px;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease; 
 }
 
 .styled-buttons[aria-current="true"] {

@@ -20,7 +20,7 @@
 <Nav />
 <div class="flex flex-row center justify-evenly items-center">
     <div class="flex flex-col width-restriction space-y-10">
-        <h1 class = "header playfair-bold">
+        <h1 class = "header merriweather-bold">
             Forms
         </h1>
             {#each Object.entries(forms) as [id, form]}
