@@ -5,8 +5,8 @@
 </script>
 
 <div
-  class="min-h-screen w-full bg-cover bg-center bg-fixed relative"
-  style="background-image: url('/ose-bg.png')"
+	class="relative min-h-screen w-full bg-cover bg-fixed bg-center"
+	style="background-image: url('/ose-bg.png')"
 >
 	<div class="pt-5 pl-25">
 		<img src="/ose-logo.png" alt="OSE Logo" class="h-auto w-200 object-contain" />
