@@ -20,13 +20,11 @@
             Resources
         </h1>
         {#each Object.entries(resources) as [id, resource]}
-        <li>
             <button class="styled-buttons poppins-light" aria-current={selectedResource === id}
                 onclick={() => selectedResource = id}
             >
                 {resource.title}
             </button>
-        </li>
         {/each}
     </div>
 
