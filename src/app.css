@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import 'tailwindcss';
@@ -8,16 +9,158 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "tailwindcss";
+@import "tw-animate-css";
 
+@custom-variant dark (&:is(.dark *));
+
+/*
+Solid colors are done using hex format: https://imagecolorpicker.com/color-code/2596be. 
+For colors that have transparency, rgba is used: https://rgbacolorpicker.com/
+You may also consider using OKLCH colors for styling: https://oklch.com/
+*/
+
+:root {
+  --radius: 0.625rem;                   /*Degree of rounding of square corners. Is a value between [0, 1], inclusive */
+  --background: #FFFFFF;              /*Background color of components with ".root" */
+  --foreground: #09090B;              /*Color of Text and Symbols under ".root" */
+  --card: #FFFFFF;                    /*Background color of "Card.root" */
+  --card-foreground: #09090B;         /*Color of text and symbols under "Card.root" */
+  --popover: #FFFFFF;                 /*NOT USED*/
+  --popover-foreground: #09090B;      /*NOT USED*/
+  --primary: #18181B;                 /*NOT USED; used in Save password button on card*/
+  --primary-foreground: #FAFAFA;      /*NOT USED; used in Save password button on card*/
+  --secondary: #F4F4F5;               /*NOT USED*/
+  --secondary-foreground: #18181B;    /*NOT USED*/
+  --muted: #F4F4F5;                   /*NOT USED*/
+  --muted-foreground: #71717B;        /*NOT USED*/
+  --accent: #F4F4F5;                  /*NOT USED*/
+  --accent-foreground: #18181B;       /*NOT USED*/
+  --destructive: #E7000b;             /*NOT USED*/
+  --border: #E4E4E7;                  /*Color of thin border around components with ".root" */
+  --input: #E4E4E7;                   /*NOT USED*/
+  --ring: #9F9FA9;                    /*NOT USED*/
+  --chart-1: #F54A00;                 /*NOT USED*/
+  --chart-2: #009689;                 /*NOT USED*/
+  --chart-3: #104E64;                 /*NOT USED*/
+  --chart-4: #FFBA00;                 /*NOT USED*/
+  --chart-5: #FD9A00;                 /*NOT USED*/
+  --sidebar: #FAFAFA;                 /*NOT USED*/
+  --sidebar-foreground: #09090B;          /*NOT USED*/
+  --sidebar-primary: #18181B;             /*NOT USED*/
+  --sidebar-primary-foreground: #FAFAFA;  /*NOT USED*/
+  --sidebar-accent: #F4F4F5;              /*NOT USED*/
+  --sidebar-accent-foreground: #18181B;   /*NOT USED*/
+  --sidebar-border: #E4E4E7;              /*NOT USED*/
+  --sidebar-ring: #9F9FA9;                /*NOT USED*/
+}
+
+.dark {
+  --background: #09090B;              /*Background color of components with ".root" */
+  --foreground: #FAFAFA;              /*Color of Text and Symbols under ".root" */
+  --card: #18181B;                    /*Background color of "Card.root" */
+  --card-foreground: #FAFAFA;         /*Color of text and symbols under "Card.root" */
+  --popover: #18181B;                 /*NOT USED*/
+  --popover-foreground: #FAFAFA;      /*NOT USED*/
+  --primary: #E4E4E7;                 /*NOT USED; used in Save password button on card*/
+  --primary-foreground: #18181B;      /*NOT USED; used in Save password button on card*/
+  --secondary: #27272A;               /*NOT USED*/
+  --secondary-foreground: #FAFAFA;    /*NOT USED*/
+  --muted: #27272A;                   /*NOT USED*/
+  --muted-foreground: #9F9FA9;        /*NOT USED*/
+  --accent: #27272A;                  /*NOT USED*/
+  --accent-foreground: #FAFAFA;       /*NOT USED*/
+  --destructive: #FF6467;             /*NOT USED*/
+  --border: rgba(255, 255, 255, 0.1); /*Color of thin border around components with ".root" */
+  --input: rgba(255, 255, 255, 0.15); /*NOT USED*/
+  --ring: #71717B;                    /*NOT USED*/
+  --chart-1: #1447E6;                 /*NOT USED*/
+  --chart-2: #00BC7D;                 /*NOT USED*/
+  --chart-3: #FD9A00;                 /*NOT USED*/
+  --chart-4: #AD46FF;                 /*NOT USED*/
+  --chart-5: #FF2056;                 /*NOT USED*/
+  --sidebar: #18181B;                 /*NOT USED*/
+  --sidebar-foreground: #FAFAFA;                      /*NOT USED*/
+  --sidebar-primary: #1447E6;                         /*NOT USED*/
+  --sidebar-primary-foreground: #FAFAFA;              /*NOT USED*/
+  --sidebar-accent: #27272A;                          /*NOT USED*/
+  --sidebar-accent-foreground: #FAFAFA;               /*NOT USED*/
+  --sidebar-border: rgba(255, 255, 255, 0.1);         /*NOT USED*/
+  --sidebar-ring: #71717B;                            /*NOT USED*/
+}
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
 
 @theme {
-  --color-bgred: #8c143a;
+  --color-bgred: #8C143A;
   --color-bggreen: #00573E;
   --font-display: "Poppins", sans-serif;
   --font-header: "Merriweather", sans-serif;
   --color-textcolor: #E5E1E1;
 }
 
+/*
+  Custom Fonts can be imported from Google Fonts and used on the website for design. 
+  Make sure to import fonts using @import in the <script> section above first before adding a CSS variable style below.
+  Each css class variable style is composed of three main parts; font family, font weight, and font style:
+    - Font-family is the imported font name followed by the default font if the import cannot be found. 
+    - Fonts have The unique identifiers of each font weight are usually the following, but does not need to follow this format:
+        - thin: 100
+        - extralight: 200
+        - light: 300
+        - regular: 400
+        - medium: 500
+        - semibold: 600
+        - bold: 700
+        - extrabold: 800
+        - black: 900
+    Some fonts also support italics, but not all. you can specify whether a font uses italics or not using "font-style: italic;"
+*/
 .poppins-thin {
   font-family: "Poppins", sans-serif;
   font-weight: 100;
