@@ -25,29 +25,16 @@
 <!-- Softcopy of OSE Clearance Application-->
 
 <Nav />
-<<<<<<< HEAD
 <div class="flex w-[720px] flex-col gap-6 mx-auto mt-5 font-display">
     <Tabs.Root value="clearanceApplicationForm">
         <Tabs.List class="mx-auto">
             <Tabs.Trigger value="clearanceApplicationForm">Softcopy of OSE Clearance Application</Tabs.Trigger>
             <Tabs.Trigger value="hardCopyOfDocuments">Hardcopy Request of Other Documents</Tabs.Trigger>
-=======
- 
-<div class="flex w-[720px] flex-col gap-6 mx-auto mt-5 font-display">
-    <Tabs.Root value="clearanceApplicationForm">
-        <Tabs.List class="mx-auto">
-            <Tabs.Trigger value="clearanceApplicationForm">Online Clearance Application Form</Tabs.Trigger>
-            <Tabs.Trigger value="hardCopyOfDocuments">Request for Hardcopy of Documents</Tabs.Trigger>
->>>>>>> 3ca496ba686959a401e9f99e3ec05f50f377b58e
         </Tabs.List>
         <Tabs.Content value="clearanceApplicationForm">
         <Card.Root class="flex w-auto">
             <Card.Header>
-<<<<<<< HEAD
                 <Card.Title>Softcopy of OSE Clearance Application</Card.Title>
-=======
-                <Card.Title>Online Clearance Application Form</Card.Title>
->>>>>>> 3ca496ba686959a401e9f99e3ec05f50f377b58e
                 <Card.Description>
                 Nani ga sukiii?
                 </Card.Description>
@@ -80,11 +67,7 @@
         <Tabs.Content value="hardCopyOfDocuments">
             <Card.Root>
                 <Card.Header>
-<<<<<<< HEAD
                     <Card.Title>Hardcopy Request of Other Documents</Card.Title>
-=======
-                    <Card.Title>Request for Hardcopy of Documents</Card.Title>
->>>>>>> 3ca496ba686959a401e9f99e3ec05f50f377b58e
                     <Card.Description>
                     Choko Minto! Yori mo anata!?    
                     </Card.Description>
