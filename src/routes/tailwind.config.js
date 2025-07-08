@@ -1,0 +1,5 @@
+safelist: [
+  {
+    pattern: /grid-cols-.+/,
+  }
+]
