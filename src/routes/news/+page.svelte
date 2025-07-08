@@ -17,6 +17,8 @@
   ];
 </script>
 
+<Nav />
+
 <div class="flex justify-center mt-5">
   <Carousel.Root class="w-full max-w-xl">
     <Carousel.Content>
