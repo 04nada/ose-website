@@ -5,7 +5,7 @@
 <Nav />
 
 <div id='main_text'>
-    <p id='ose_intro'>
+    <p id='ose_intro' class="p-paragraph text-black">
         The Office for Student Ethics is a disciplinary body formed to help promote ethical
         student behavior and the values of Honor and Integrity as necessary complements
         to the pursuit of Academic Excellence, Social Responsibility, and Personal Development.
@@ -16,8 +16,8 @@
     </p>
     
     <div id='services'>
-        <h2> Services </h2>
-        <ul>
+        <h2 class="merriweather-medium"> Services </h2>
+        <ul class="p-paragraph">
             <li> Receive copies of all complaints and case reports involving student misconduct </li>
             <li> Facilitate alternative dispute resolution (ADR) methods in cases involving less serious misconduct committed outside the jurisdiction of a college. </li>
             <li> Form ad hoc committees that will hear and resolve cases involving serious misconduct, except intellectual dishonesty, and less serious misconduct involving more than one college. </li>
@@ -27,7 +27,7 @@
     </div>
 
     <div id='history'>
-        <h2> History </h2>
+        <h2 class="merriweather-medium"> History </h2>
         <div>
             <p>(Todo)</p>
         </div>
@@ -36,16 +36,16 @@
     <div>
         <div id='vision_mission'>
             <div id='vision'>
-                <h2> Vision </h2>
-                <p>
+                <h2 class="merriweather-medium"> Vision </h2>
+                <p class="p-paragraph">
                     A safe and nurturing University environment where students learn civility, veer away
                     from destructive behavior, develop nationalism and social responsibility, and thrive
                     in a community of scholars that uphold the highest standards of honor and excellence.
                 </p>
             </div>
             <div id='mission'>
-                <h2> Mission </h2>
-                <ul>
+                <h2 class="merriweather-medium"> Mission </h2>
+                <ul class="p-paragraph">
                     <li> Orient faculty and students about the relevance of ethical conduct to academic and personal life. </li>
                     <li> Ensure fair, just, and effective promotion of ethical behavior, moral consciousness, peaceful management of conflicts, and enforcement of principled discipline. </li>
                     <li> nitiate review of the Code as a living document. </li>
@@ -87,7 +87,7 @@
     }
 
     #history, #vision, #mission, #services{
-        border-left: 0.01rem solid #EDAE1A;
+        border-left: 0.1rem solid #EDAE1A;
         margin-bottom: 1rem;
         padding: 1rem;
     }

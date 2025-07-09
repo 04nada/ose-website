@@ -416,3 +416,7 @@ You may also consider using OKLCH colors for styling: https://oklch.com/
   color:#F2F2F2;
   font-size: 48px;
 }
+
+.p-paragraph{
+  @apply font-display
+}
