@@ -11,14 +11,14 @@
     <div class="flex flex-row justify-between items-start w-[90%] mx-auto mt-10">
     <div class="flex-shrink-0">
         <div>
-        <h1 class="text-2xl font-bold">Meet the Team</h1>
+        <h1 class="text-2xl merriweather-medium">Meet the Team</h1>
         </div>
     </div>
 
     <div class="flex flex-col gap-8">
     <div>
-        <h1 class="text-2xl font-bold mb-4">Contact Us</h1>
-        <ul class="space-y-5">
+        <h1 class="text-2xl font-bold mb-4 merriweather-medium">Contact Us</h1>
+        <ul class="space-y-2 font-display">
         <li>0981 850 0450 / 89818500 loc 4509</li>
         <li>ose.upd@up.edu.ph</li>
         <li>
@@ -45,7 +45,7 @@
 <style>
     * {
         color: white;
-        font-family: 'Times New Roman', 'Times New Roman', Times, serif;
+        /* font-family: 'Times New Roman', 'Times New Roman', Times, serif; */
     }
 
     #main_text {
