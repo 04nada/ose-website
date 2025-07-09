@@ -40,7 +40,7 @@
     <Carousel.Content class="flex gap-4 -mx-4">
       {#each news as item, i (i)}
         <Carousel.Item class="basis-[50%] shrink-0">
-          <div class="h-[450px] w-full overflow-hidden rounded-lg p-10 bg-white border-bggreen border-4shadow-md flex flex-col space-y-4">
+          <div class="h-[450px] w-full overflow-hidden rounded-lg p-10 bg-white border-4 border-[#EDAE1A] shadow-md flex flex-col space-y-4">
             <img
               src={item.src}
               alt={item.title}
