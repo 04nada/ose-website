@@ -30,7 +30,7 @@
                     OSE 太好了！
                 </Card.Description>
             </Card.Header>
-            <Card.Content class="grid gap-6">
+            <Card.Content class="grid justify-center gap-6">
             <div>
                 <iframe
                 src={resources['studentconduct2012'].embedSrc}
