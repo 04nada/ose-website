@@ -32,7 +32,7 @@
         src={oseMap}
         width="500"
         height="400"
-        class="rounded shadow"
+        class="rounded shadow border-3 border-white"
         style="border:0;"
         allowfullscreen
         loading="lazy"

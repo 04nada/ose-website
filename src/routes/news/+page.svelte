@@ -40,15 +40,15 @@
     <Carousel.Content class="flex gap-4 -mx-4">
       {#each news as item, i (i)}
         <Carousel.Item class="basis-[50%] shrink-0">
-          <div class="h-[450px] w-full overflow-hidden rounded-lg p-10 bg-white border-4 border-[#EDAE1A] shadow-md flex flex-col space-y-4">
+          <div class="h-[450px] w-full overflow-hidden rounded-lg p-10 bg-bggreen border-3 border-[#EDAE1A] shadow-md flex flex-col space-y-4">
             <img
               src={item.src}
               alt={item.title}
-              class="w-full h-56 object-cover border-4 border-bggreen rounded-md"
+              class="w-full h-56 object-cover border-0 border-[#EDAE1A] rounded-md"
             />
             <div class="flex-1">
-              <h2 class="text-xl text-bggreen font-semibold mb-2">{item.title}</h2>
-              <p class="text-sm text-gray-700 leading-relaxed">{item.paragraph}</p>
+              <h2 class="text-xl text-white font-semibold mb-2">{item.title}</h2>
+              <p class="text-sm text-white leading-relaxed">{item.paragraph}</p>
             </div>
           </div>
         </Carousel.Item>
