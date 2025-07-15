@@ -57,5 +57,10 @@
 		"onlyBuiltDependencies": [
 			"esbuild"
 		]
+	},
+	"dependencies": {
+		"@apollo/client": "^3.13.8",
+		"axios": "^1.10.0",
+		"graphql": "^16.11.0"
 	}
 }

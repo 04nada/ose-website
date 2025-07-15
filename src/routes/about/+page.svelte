@@ -28,9 +28,54 @@
 
     <div id='history'>
         <h2 class="merriweather-medium"> History </h2>
-        <div>
-            <p>(Todo)</p>
-        </div>
+
+        <h3 class="merriweather-semibold mb-2">Who are we when no one is watching?</h3>
+        <p class="p-paragraph">
+                This simple but profound question lies at the heart of the transformation that gave birth to the Office for Student Ethics (OSE) at UP Diliman. 
+                In a university that upholds honor and excellence, character is not imposed. It is chosen, owned, and nurtured. 
+                The history of the OSE is more than a shift in office names, it unravels a deeper philosophical shift in how we understand discipline, 
+                not as punishment, but as restorative and transformative education.
+                </p>
+
+        <h3 class="merriweather-semibold mt-8 mb-2">From Tribunals to Ethics, A Pathway Toward Restorative Justice?</h3>
+        <p class="p-paragraph">
+                   The origins of the Office for Student Ethics date back to 1976, with the establishment of the Student Disciplinary Tribunal (SDT). 
+                   Then, student discipline in UP Diliman was litigious in nature, heavily patterned after legal procedures. 
+                   The SDT was closely tied to the Diliman Legal Office and echoed the courtroom setup, with lawyers, and formal adjudications. 
+                   This reflected a time when discipline was seen as an external imposition rather than an internal opportunity for growth. 
+                   However, not all cases fit neatly into this adversarial model. In 2003, the University recognized the specific need for a more focused mechanism to address sexual harassment. 
+                   Thus, the Office of Anti-Sexual Harassment (OASH) was created following the Anti-Sexual Harassment Code passed on December 11, 2003. 
+                   OASH handled these sensitive cases with a trauma-informed approach, distinct from the broader mandate of the SDT.
+                </p>
+        <p class="p-paragraph mt-2">
+                By 2014, a significant structural and philosophical shift occurred. The SDT evolved into the Student Disciplinary Council (SDC). 
+                This change reduced the formal role of legal counsels, reflecting a desire to move away from adversarialism and toward a more educational model. 
+                The SDC emphasized community norms and peer accountability, better aligning with the university’s identity as a community of scholars. 
+                </p>
+        <p class="p-paragraph mt-2">
+                The most radical transformation came in 2019, when the UP Board of Regents renamed the SDC to the Office for Student Ethics (OSE). 
+                This wasn’t just a rebranding, it was a reframing. The new office was designed to integrate research and training module development into its mandate, shifting the entire orientation from punitive measures to restorative justice and ethical development. 
+                The OSE now works actively to educate and reorient students toward responsible and ethical agency.
+                </p>
+
+        <h3 class="merriweather-semibold mt-8 mb-2">A Community of Scholars, Not Sinners</h3>
+        <p class="p-paragraph">
+                UP Diliman is not a court of law; it is a university with a community of autonomous and thinking individuals. 
+                We are not here to brand students with metaphorical scarlet letters, as in Hawthorne’s dystopic tale. 
+                Instead, the OSE stands for healing, accountability, and reintegration. 
+                Its restorative nature allows for Alternative Dispute Resolution (ADR) in minor cases, especially those occurring outside the jurisdiction of individual colleges. 
+                This means fewer hearings and more dialogue, less litigation and more learning.
+                </p>
+         <p class="p-paragraph mt-2">
+                Through these changes, the Office for Student Ethics affirms that discipline is not just about correcting behavior. 
+                It’s about building character through ethical reflection, and championing community responsibility. 
+                We hold ourselves, and each other, to a higher standard because we are scholars. 
+                And scholars do not hide behind rules, they live by principles.
+                </p>
+        <p class="p-paragraph mt-2">
+                So again, we ask: Who are we when no one is watching? At UP Diliman, the answer is clear: We are ethical agents, shaping not just our futures, 
+                but the moral fabric of our university and society.
+                </p>
     </div>
 
     <div>
