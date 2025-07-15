@@ -34,7 +34,7 @@
             <div>
                 <iframe
                 src={resources['studentconduct2012'].embedSrc}
-                width=640 height=500 
+                width=640 height=820 
                 frameborder="0" marginheight="0" marginwidth="0"
                 title={resources['studentconduct2012'].title} 
             >
