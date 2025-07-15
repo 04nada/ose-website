@@ -6,6 +6,7 @@ const queryPostIDs = `{
     nodes {
       newsPostFields {
         title
+        page
         datePublished
         dateModified
         content

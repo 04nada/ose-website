@@ -1,35 +1,8 @@
 <script lang="ts">
     import Nav from "$lib/components/Nav.svelte";
     import * as Carousel from "$lib/components/ui/carousel/index.js";
+    import { page } from '$app/state';
     import type { PageProps } from './$types';
-
-    const news = [
-        {
-            src: "/news1.jpg",
-            title: "Padayon! UP Diliman Class of 2025",
-            paragraph: "Sa pagtatapos ninyo sa kolehiyo, patuloy kayong makisangkot at manguna sa pagbubuo ng lunas sa mga sugat ng lipunan. Ipamalas ninyo ang #DangalAtHusay sa paglilingkod sa sambayanan!",
-        },
-        {
-            src: "/news2.jpg",
-            title: "Padayon! UP Diliman Class of 2025",
-            paragraph: "Sa pagtatapos ninyo sa kolehiyo, patuloy kayong makisangkot at manguna sa pagbubuo ng lunas sa mga sugat ng lipunan. Ipamalas ninyo ang #DangalAtHusay sa paglilingkod sa sambayanan!",
-        },
-        {
-            src: "/news3.jpg",
-            title: "Padayon! UP Diliman Class of 2025",
-            paragraph: "Sa pagtatapos ninyo sa kolehiyo, patuloy kayong makisangkot at manguna sa pagbubuo ng lunas sa mga sugat ng lipunan. Ipamalas ninyo ang #DangalAtHusay sa paglilingkod sa sambayanan!",
-        },
-        {
-            src: "/news4.jpg",
-            title: "Padayon! UP Diliman Class of 2025",
-            paragraph: "Sa pagtatapos ninyo sa kolehiyo, patuloy kayong makisangkot at manguna sa pagbubuo ng lunas sa mga sugat ng lipunan. Ipamalas ninyo ang #DangalAtHusay sa paglilingkod sa sambayanan!",
-        },
-        {
-            src: "/news5.jpg",
-            title: "Padayon! UP Diliman Class of 2025",
-            paragraph: "Sa pagtatapos ninyo sa kolehiyo, patuloy kayong makisangkot at manguna sa pagbubuo ng lunas sa mga sugat ng lipunan. Ipamalas ninyo ang #DangalAtHusay sa paglilingkod sa sambayanan!",
-        },
-    ];
 
     let { data }: PageProps = $props();
 
@@ -45,17 +18,19 @@
             <!-- todo: replace news <-> data.posts if testing -->
             {#each data.posts as item, i (i)}
                 <Carousel.Item class="basis-[50%] shrink-0">
-                    <div class="h-[450px] w-full overflow-hidden rounded-lg p-10 bg-bggreen border-3 border-[#EDAE1A] shadow-md flex flex-col space-y-4">
-                        <img
-                            src={item.newsPostFields.previewImage.node.mediaItemUrl}
-                            alt={item.newsPostFields.title}
-                            class="w-full h-56 object-cover border-0 border-[#EDAE1A] rounded-md"
-                        />
-                        <div class="flex-1">
-                            <h2 class="text-xl text-white font-semibold mb-2">{item.newsPostFields.title}</h2>
-                            <p class="text-sm text-white leading-relaxed">{item.newsPostFields.content}</p>
+                    <a href="{page.url}/{item.newsPostFields.page}">
+                        <div class="h-[450px] w-full overflow-hidden rounded-lg p-10 bg-bggreen border-3 border-[#EDAE1A] shadow-md flex flex-col space-y-4">
+                            <img
+                                src={item.newsPostFields.previewImage.node.mediaItemUrl}
+                                alt={item.newsPostFields.title}
+                                class="w-full h-56 object-cover border-0 border-[#EDAE1A] rounded-md"
+                            />
+                            <div class="flex-1">
+                                <h2 class="text-xl text-white font-semibold mb-2">{item.newsPostFields.title}</h2>
+                                <p class="text-sm text-white leading-relaxed">{item.newsPostFields.content}</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </Carousel.Item>
             {/each}
         </Carousel.Content>
