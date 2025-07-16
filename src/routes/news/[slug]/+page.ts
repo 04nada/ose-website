@@ -26,12 +26,12 @@ const databaseUrl = new URL(import.meta.env.VITE_REST_API_URL);
 databaseUrl.search = new URLSearchParams({query: queryPostIDs}).toString();
 
 export const load: PageLoad = async ({ params, fetch }) => {
-    if (params.slug === 'test') {
-        return {
-            title: 'This is the Office for Student Ethics.',
-            content: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
-            date_created: '07 July 2025',
-            date_modified: '08 July 2025',
+	if (params.slug === 'first-announcement') {
+		return {
+			title: 'This is the Office for Student Ethics.',
+			content: 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipiscing elit.Lorem ipsum dolor sit amet consectetur adipiscing elit.Lorem ipsum dolor sit amet consectetur adipiscing elit.Lorem ipsum dolor sit amet consectetur adipiscing elit.Lorem ipsum dolor sit amet consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+            datePublished: '07 July 2025',
+            dateModified: '08 July 2025',
             images: [
                 {
                     src: '/news1.jpg',
