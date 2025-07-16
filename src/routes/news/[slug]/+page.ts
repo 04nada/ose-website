@@ -26,7 +26,7 @@ const databaseUrl = new URL(import.meta.env.VITE_REST_API_URL);
 databaseUrl.search = new URLSearchParams({query: queryPostIDs}).toString();
 
 export const load: PageLoad = async ({ params, fetch }) => {
-	if (params.slug === 'first-announcement') {
+	if (params.slug === 'test') {
 		return {
 			title: 'This is the Office for Student Ethics.',
 			content: 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipiscing elit.Lorem ipsum dolor sit amet consectetur adipiscing elit.Lorem ipsum dolor sit amet consectetur adipiscing elit.Lorem ipsum dolor sit amet consectetur adipiscing elit.Lorem ipsum dolor sit amet consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipiscing elit.',
