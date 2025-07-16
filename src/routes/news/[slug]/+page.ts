@@ -52,8 +52,6 @@ export const load: PageLoad = async ({ params, fetch }) => {
 
         for (const item of posts) {
             if (params.slug === item.newsPostFields.page) {
-                console.log('found: ', params.slug);
-                console.log('item: ', item);
                 return {
                     title: item.newsPostFields.title,
                     content: item.newsPostFields.content,
