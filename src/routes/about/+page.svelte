@@ -4,7 +4,7 @@
 
 <Nav />
 
-<div id='main_text'>
+<div id='main_text' class="px-5 sm:px-10 md:px-20">
     <p id='ose_intro' class="p-paragraph text-black">
         The Office for Student Ethics is a disciplinary body formed to help promote ethical student behavior and the values of Honor 
         and Integrity as necessary complements to the pursuit of Academic Excellence, Social Responsibility, and Personal Development.
@@ -12,7 +12,7 @@
 
     <p id='ose_intro' class="p-paragraph text-black">   
         Formerly the Student Disciplinary Council (SDC) formed by the Chancellor under the administrative supervision of 
-        the Vice Chancellor for Student Affairs, the OSE is the disciplinary arm of the University, 
+        the Vice Chancellor for Student Affai   rs, the OSE is the disciplinary arm of the University, 
         as per the 2012 UP Diliman Code of Student Conduct.
     </p>
     
@@ -116,11 +116,11 @@
     Meaning it will also apply a margin to the navbar and header
     */
 
-    #main_text {
+    /* #main_text {
         margin-left: 10rem;
         margin-right: 10rem;
-        /* margin-bottom: 10rem; There is a green shadow here that needs to be resolved.*/
-    }
+        margin-bottom: 10rem; There is a green shadow here that needs to be resolved.
+    } */
 
     :global(h2) {
         font-size: 2rem;

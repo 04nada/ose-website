@@ -418,5 +418,6 @@ You may also consider using OKLCH colors for styling: https://oklch.com/
 }
 
 .p-paragraph{
-  @apply font-display
+  @apply text-sm pl-5 pt-5 sm:text-base;
+  @apply font-display;
 }
