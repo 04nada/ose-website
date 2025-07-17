@@ -17,10 +17,23 @@ const queryPostIDs = `{
                     }
                 }
             }
+            newsPostImages {
+                images {
+                    id
+                }
+            }
+        }
+    }
+    mediaItems {
+        nodes {
+            databaseId
+            altText
+            mediaItemUrl
         }
     }
 }
 `;
+// todo: fetching mediaItems might get problematic once there are many images
 
 const databaseUrl = new URL(import.meta.env.VITE_REST_API_URL);
 databaseUrl.search = new URLSearchParams({query: queryPostIDs}).toString();
@@ -49,6 +62,44 @@ export const load: PageLoad = async ({ params, fetch }) => {
     if (response.ok) {
         const responseObj = await response.json();
         const posts = responseObj.data.newsPosts.nodes;
+        const images = responseObj.data.mediaItems.nodes;
+
+        /*
+            [{
+                databaseId: X1
+                altText: Y1
+                mediaItemUrl: Z1
+            },
+            {
+                databaseId: X2
+                altText: Y2
+                mediaItemUrl: Z2
+            }]
+
+            becomes
+
+            {
+                X1: {
+                    src: Z1
+                    alt: Y1
+                },
+                X2: {
+                    src: Z2
+                    alt: Y2
+                }
+            }
+        */
+        const imageAltTexts = images.reduce(
+            (map: { [id: string]: { src: string, alt: string; }; }, obj: { databaseId: string; mediaItemUrl: string, altText: string; }) => {
+                {map[obj.databaseId] = {
+                        src: obj.mediaItemUrl,
+                        alt: obj.altText
+                    }
+                };
+                return map;
+            },
+            {}
+        );
 
         for (const item of posts) {
             if (params.slug === item.newsPostFields.page) {
@@ -57,16 +108,9 @@ export const load: PageLoad = async ({ params, fetch }) => {
                     content: item.newsPostFields.content,
                     datePublished: Date.parse(item.newsPostFields.datePublished),
                     dateModified: Date.parse(item.newsPostFields.dateModified),
-                    images: [
-                        {
-                            src: '/news1.jpg',
-                            alt: 'Notice to the Public',
-                        },
-                        {
-                            src: '/news2.jpg',
-                            alt: 'Padayon 2025',
-                        },
-                    ],
+                    images: item.newsPostImages.images.map(
+                        (image: { id: string }) => imageAltTexts[image.id]
+                    ),
                 };
             }
         };
