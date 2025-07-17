@@ -2,23 +2,23 @@ import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
 
 const queryPostIDs = `{
-  newsPosts {
-    nodes {
-      newsPostFields {
-        title
-        page
-        datePublished
-        dateModified
-        content
-        previewImage {
-          node {
-            altText
-            mediaItemUrl
-          }
+    newsPosts {
+        nodes {
+            newsPostFields {
+                title
+                page
+                datePublished
+                dateModified
+                content
+                previewImage {
+                    node {
+                        altText
+                        mediaItemUrl
+                    }
+                }
+            }
         }
-      }
     }
-  }
 }
 `;
 
