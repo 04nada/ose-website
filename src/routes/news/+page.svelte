@@ -20,6 +20,7 @@
                 <Carousel.Item class="basis-[50%] shrink-0">
                     <a href="{page.url}/{item.newsPostFields.page}">
                         <div class="h-[450px] w-full overflow-hidden rounded-lg p-10 bg-bggreen border-3 border-[#EDAE1A] shadow-md flex flex-col space-y-4">
+                            <!-- todo: check if src or alt does not exist (or else Error 500) -->
                             <img
                                 src={item.newsPostFields.previewImage.node.mediaItemUrl}
                                 alt={item.newsPostFields.title}
