@@ -37,8 +37,5 @@ export const load: PageLoad = async ({ fetch }) => {
         };
     }
 
-    return {
-        status: response.status,
-        error: new Error(`Could not load ${URL}`)
-    };
+    return error(response.status, `Could not load ${URL}`);
 };
