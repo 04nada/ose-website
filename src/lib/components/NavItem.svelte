@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { page } from '$app/stores';
+  import { page } from '$app/state';
 
   let className = '';
   export { className as class };
@@ -7,8 +7,8 @@
   export let route: string;
 
   $: isActive = route === '/'
-    ? $page.url.pathname === '/'
-    : $page.url.pathname.startsWith(route);
+    ? page.url.pathname === '/'
+    : page.url.pathname.startsWith(route);
 </script>
 
 <div class="relative">
