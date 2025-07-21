@@ -139,6 +139,7 @@ You may also consider using OKLCH colors for styling: https://oklch.com/
 @theme {
   --color-bgred: #8C143A;
   --color-bggreen: #00573E;
+  --color-bgyellow: #EDAE1A;
   --font-display: "Poppins", sans-serif;
   --font-header: "Merriweather", sans-serif;
   --color-textcolor: #E5E1E1;
