@@ -4,6 +4,16 @@
 	import * as Carousel from "$lib/components/ui/carousel/index.js";
 
 	let { data }: PageProps = $props();
+
+    // Month dd, yyyy
+    function formatDate(date: string) {
+        return new Date(date).toLocaleString('en-US', {
+            'day': 'numeric',
+            'month': 'long',
+            'year': 'numeric',
+        })
+    }
+
 </script>
 
 <Nav />
@@ -13,8 +23,8 @@
 		{data.title}
 	</h1>
 
-	<h2 class="mt-3 text-sm">Created: {data.datePublished}</h2>
-	<h2 class="text-sm">Last Modified: {data.dateModified}</h2>
+	<h2 class="mt-3 text-sm">Created: {formatDate(data.datePublished)}</h2>
+	<h2 class="text-sm">Last Modified: {formatDate(data.dateModified)}</h2>
 
 	<div class="flex flex-row gap-8 mt-10">
 		<!-- Carousel Section -->

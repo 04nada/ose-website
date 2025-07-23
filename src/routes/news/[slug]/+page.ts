@@ -106,8 +106,8 @@ export const load: PageLoad = async ({ params, fetch }) => {
                 return {
                     title: item.newsPostFields.title,
                     content: item.newsPostFields.content,
-                    datePublished: Date.parse(item.newsPostFields.datePublished),
-                    dateModified: Date.parse(item.newsPostFields.dateModified),
+                    datePublished: item.newsPostFields.datePublished,
+                    dateModified: item.newsPostFields.dateModified,
                     images: item.newsPostImages.images.map(
                         (image: { id: string }) => imageAltTexts[image.id]
                     ),
