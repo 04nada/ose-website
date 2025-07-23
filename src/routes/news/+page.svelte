@@ -12,6 +12,15 @@
 
     // todo: remove log
     console.log(data.posts);
+
+    // Month dd, yyyy
+    function formatDate(date: string) {
+        return new Date(date).toLocaleString('en-US', {
+            'day': 'numeric',
+            'month': 'long',
+            'year': 'numeric',
+        })
+    }
 </script>
 
 <Nav />
@@ -39,7 +48,10 @@
 
                             <div class="flex-1">
                                 <h2 class="text-xl text-white font-semibold mb-2">{item.newsPostFields.title}</h2>
-                                <p class="text-sm text-white leading-relaxed">{item.newsPostFields.content}</p>
+                            </div>
+
+                            <div class="flex-1">
+                                <!-- calendar icon --> {formatDate(item.newsPostFields.datePublished)}
                             </div>
                         </div>
                     </a>
@@ -51,5 +63,3 @@
         <Carousel.Next class="absolute right-0 top-1/2 -translate-y-1/2 z-10" />
     </Carousel.Root>
 </div>
-
-

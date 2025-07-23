@@ -8,8 +8,6 @@ const queryPostIDs = `{
                 title
                 page
                 datePublished
-                dateModified
-                content
                 previewImage {
                     node {
                         altText
