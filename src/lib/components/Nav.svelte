@@ -28,7 +28,7 @@
 	</div>
 
     <nav>
-    <div class="hidden sm:flex sm:flex-row sm:gap-5 w-[90%] bg-bgred font-sans mx-auto rounded-md justify-evenly items-center">
+    <div class="hidden sm:flex sm:flex-row sm:gap-5 w-[90%] bg-bgred font-sans mx-auto rounded-md justify-evenly items-center p-1">
         <NavItem navName="Home" route="/"/>
         <NavItem navName="Forms" route="/forms"/>
         <NavItem navName="News" route="/news"/>

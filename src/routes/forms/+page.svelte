@@ -24,6 +24,8 @@
 
 <Nav />
 
+<h1 class="text-3xl merriweather-bold mt-5 ml-30 text-white"> Forms </h1>
+
 <div class="flex w-[720px] flex-col gap-6 mx-auto mt-5 font-display">
     <Tabs.Root value="clearanceApplicationForm">
         <Tabs.List class="mx-auto">
@@ -106,7 +108,7 @@
     </Tabs.Root>
 </div>
 
-<div class="flex flex-row center justify-evenly items-center">
+<div class="flex sm:hidden lex-row center justify-evenly items-center">
     <div class="flex flex-col width-restriction space-y-10">
         <h1 class = "header merriweather-bold">
             Forms
