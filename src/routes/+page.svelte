@@ -5,23 +5,25 @@
 
 
 <div
-  class="relative h-screen bg-cover bg-center bg-no-repeat"
-  style="background-image: url('/try.png')"
->
-  <img
-    src="/backup-logo.png"
-    alt="Logo"
-    class="absolute top-8 left-8 w-150 h-auto z-10"
-  />
+	class="flex bg-cover w-full h-[1020px] bg-top bg-no-repeat bg-[url(/backup-background.png)]"
+	>
 
-  <div
-    class="absolute top-1/2 right-50 transform -translate-y-1/2 text-white text-5xl text-left tracking-wide leading-tight"
-    style="font-family: 'Playfair'; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);"
-  >
+		<img
+			src="/backup-logo.png"
+			alt="Logo"
+			class="absolute top-8 left-8 w-150 h-auto z-10"
+		/>
+
+	<div
+		class="absolute top-1/2 right-50 transform -translate-y-1/2 text-white text-5xl text-left tracking-wide leading-tight"
+		style="font-family: 'Playfair'; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);"
+	>
    Welcome to the Office<br />
     of Student Ethics!
-  </div>
-</div>
+  		</div>
+	</div>
+
+
 
 
 <div class="h-screen bg-gradient-to-b from-[#ffffff] to-[#cccccc] text-black flex items-center justify-center pt-16">
