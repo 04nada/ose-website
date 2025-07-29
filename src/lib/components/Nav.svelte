@@ -28,7 +28,7 @@
 	</div>
 
     <nav>
-    <div class="hidden sm:flex sm:flex-row sm:gap-5 w-[90%] bg-bgred font-sans mx-auto rounded-md justify-evenly items-center">
+    <div class="hidden sm:flex sm:flex-row sm:gap-5 w-[90%] bg-bgred font-sans mx-auto rounded-md justify-evenly items-center p-1">
         <NavItem navName="Home" route="/"/>
         <NavItem navName="Forms" route="/forms"/>
         <NavItem navName="News" route="/news"/>
@@ -56,7 +56,7 @@
     {/if}
     </nav>
     
-	{#if scroll>30}
+	{#if scroll>100}
 		<div class="flex flex-row top-0 w-full bg-bgred py-6 fixed" transition:fly={{ y:-200, duration:1000 }}>
             <div class="w-[40%]">
                 <p class="ml-10 poppins-bold text-lg text-textcolor">

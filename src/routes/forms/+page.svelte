@@ -22,6 +22,8 @@
 
 <Nav />
 
+<h1 class="text-3xl merriweather-bold mt-5 ml-30 text-white"> Forms </h1>
+
 <div class="flex w-[720px] flex-col gap-6 mx-auto mt-5 font-display">
     <Tabs.Root value="clearanceApplicationForm">
         <Tabs.List class="mx-auto">
@@ -95,4 +97,44 @@
             </Card.Root>
         </Tabs.Content>
     </Tabs.Root>
+</div>
+
+<div class="flex sm:hidden lex-row center justify-evenly items-center">
+    <div class="flex flex-col width-restriction space-y-10">
+        <h1 class = "header merriweather-bold">
+            Forms
+        </h1>
+
+        {#each Object.entries(forms) as [id, form]}
+            <button class="styled-buttons poppins-light" aria-current={selectedForm === id}
+                onclick={() => selectedForm = id}
+            >
+                {form.title}
+            </button>
+        {/each}
+    </div>
+    
+    <div>
+        {#if selectedForm === 'oseclearance'}
+            <iframe
+                src={forms[selectedForm].embedSrc}
+                width=640 height=500
+                frameborder="0" marginheight="0" marginwidth="0"
+                title={forms[selectedForm].title}
+            >
+                Loading...
+            </iframe>
+        {:else if selectedForm === 'osedocumentrequest'}
+            <iframe
+                src={forms[selectedForm].embedSrc}
+                width=640 height=500
+                frameborder="0" marginheight="0" marginwidth="0"
+                title={forms[selectedForm].title}
+            >
+                Loading...
+            </iframe>
+        {:else}
+            <p> Invalid form selected. </p>
+        {/if}
+    </div>
 </div>

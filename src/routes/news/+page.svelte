@@ -29,7 +29,7 @@
     <Carousel.Root class="w-full max-w-5xl px-8 relative">
         <Carousel.Content class="flex gap-4 -mx-4">
             {#each data.posts as item, i (i)}
-                <Carousel.Item class="basis-[50%] shrink-0">
+                <Carousel.Item class="basis-[50%] shrink-0 w-full">
                     <a href="{page.url}/{item.newsPostFields.page}">
                         <div class="h-[450px] w-full overflow-hidden rounded-lg p-10 bg-bggreen border-3 border-[#EDAE1A] shadow-md flex flex-col space-y-4">
                             {#if item.newsPostFields.previewImage !== null}
