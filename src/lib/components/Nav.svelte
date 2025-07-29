@@ -56,7 +56,7 @@
     {/if}
     </nav>
     
-	{#if scroll>30}
+	{#if scroll>100}
 		<div class="flex flex-row top-0 w-full bg-bgred py-6 fixed" transition:fly={{ y:-200, duration:1000 }}>
             <div class="w-[40%]">
                 <p class="ml-10 poppins-bold text-lg text-textcolor">
