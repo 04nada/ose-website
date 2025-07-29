@@ -48,34 +48,3 @@
         </Tabs.Content>
     </Tabs.Root>
 </div>
-
-<div class="flex flex-row center justify-evenly items-center">
-    <div class="flex flex-col width-restriction space-y-10">
-        <h1 class = "header merriweather-bold">
-            Resources
-        </h1>
-        
-        {#each Object.entries(resources) as [id, resource]}
-            <button class="styled-buttons poppins-light" aria-current={selectedResource === id}
-                onclick={() => selectedResource = id}
-            >
-                {resource.title}
-            </button>
-        {/each}
-    </div>
-
-    <div>
-        {#if selectedResource == 'studentconduct2012'}
-            <iframe
-                src={resources[selectedResource].embedSrc}
-                width=640 height=800
-                frameborder="1" marginheight="0" marginwidth="0"
-                title={resources[selectedResource].title}
-            >
-                Loading...
-            </iframe>
-        {:else}
-            <p> Invalid resource selected. </p>
-        {/if}
-    </div>    
-</div>
