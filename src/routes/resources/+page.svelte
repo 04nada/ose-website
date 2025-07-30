@@ -16,41 +16,41 @@
 
 <Nav />
 
-<div class="hidden sm:block">
-    <div class="flex w-[720px] flex-col gap-6 mx-auto mt-5 font-display">
-        <Tabs.Root value="codeOfStudentConduct">
-            <Tabs.List class="mx-auto">
-                <Tabs.Trigger value="codeOfStudentConduct">2012 Code of Student Conduct</Tabs.Trigger>
-            </Tabs.List>
-
-            <Tabs.Content value="codeOfStudentConduct">
-                <Card.Root class="flex-auto">
-                    <Card.Header>
-                        <Card.Title>2012 Code of Student Conduct</Card.Title>
-
-                        <Card.Description>
-                            OSE 太好了！
-                        </Card.Description>
-                    </Card.Header>
-
-                    <Card.Content class="grid justify-center gap-6">
-                        <div>
-                            <iframe
-                                src={resources['studentconduct2012'].embedSrc}
-                                width=640 height=820 
-                                frameborder="0" marginheight="0" marginwidth="0"
-                                title={resources['studentconduct2012'].title} 
-                            >
-                                Loading...
-                            </iframe>
-                        </div>
-                    </Card.Content>
-                </Card.Root>
-            </Tabs.Content>
-        </Tabs.Root>
-    </div>
+<div class="mt-4 flex justify-center">
+    <img src="/CodeOfEthics.png" alt="Descriptive text" />
 </div>
 
+<!-- Desktop View -->
+<div class="hidden sm:block">
+  <div class="m-5 grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+    
+    <!-- Embedded iframe (document) -->
+    <div class="w-full">
+      <iframe
+        src={resources['studentconduct2012'].embedSrc}
+        class="w-full h-[80vh] border-0"
+        title={resources['studentconduct2012'].title}
+      >
+        Loading...
+      </iframe>
+    </div>
+
+    <!-- Description on the side -->
+    <div class="prose max-w-none text-white">
+      <h2 class="text-xl font-semibold text-white">Code of Student Conduct (2012)</h2>
+      <p>
+        This document outlines the behavioral expectations and responsibilities 
+        of students within the university. It includes policies on academic integrity, 
+        conduct in classrooms, and university property, as well as disciplinary procedures.
+      </p>
+      <p>
+        Please read thoroughly to understand your rights and obligations.
+      </p>
+    </div>
+
+  </div>
+</div>
+<!-- Mobile View -->
 <div class="block flex sm:hidden flex-row center justify-evenly items-center">
     <div class="flex flex-col width-restriction space-y-10">
         <h1 class = "header merriweather-bold">
