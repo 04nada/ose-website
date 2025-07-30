@@ -19,7 +19,7 @@
 		style="font-family: 'Playfair'; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);"
 	>
    Welcome to the Office<br />
-    of Student Ethics!
+    for Student Ethics!
   		</div>
 	</div>
 
@@ -32,15 +32,15 @@
     <Carousel.Content class="flex w-full h-full transition-transform duration-500">
       
       <Carousel.Item class="shrink-0 w-full h-full">
-        <img src="/filler.png" alt="1" class="w-full h-full object-cover" />
+        <img src="/student-conduct.png" alt="1" class="w-full h-full object-cover" />
       </Carousel.Item>
 
       <Carousel.Item class="shrink-0 w-full h-full">
-        <img src="/filler.png" alt="2" class="w-full h-full object-cover" />
+        <img src="/ose-hardcopy.png" alt="2" class="w-full h-full object-cover" />
       </Carousel.Item>
 
       <Carousel.Item class="shrink-0 w-full h-full">
-        <img src="/filler.png" alt="3" class="w-full h-full object-cover" />
+        <img src="/ose-softcopy.png" alt="3" class="w-full h-full object-cover" />
       </Carousel.Item>
 
     </Carousel.Content>
