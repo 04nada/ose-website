@@ -11,7 +11,7 @@
 
     import { fade, fly } from 'svelte/transition';
 	
-	let visible = $state(true);
+	import { page } from '$app/state';
 
 </script>
 
@@ -19,13 +19,16 @@
 <svelte:window bind:scrollY={scroll}/>
 
 <div>
-	<div class="top-0 z-50 bg-[#E5E1E1]/0 px-20 py-3">
-		<img
-			src="/ose-logo.png"
-			alt="OSE Logo"
-			class="h-16 w-auto object-contain"
-		/>
-	</div>
+    
+    {#if page.url.pathname !== '/'}
+        <div class="top-0 z-50 bg-[#E5E1E1]/0 px-20 py-3">
+            <img
+                src="/ose-logo.png"
+                alt="OSE Logo"
+                class="h-16 w-auto object-contain"
+            />
+        </div>
+    {/if}
 
     <nav>
     <div class="hidden sm:flex sm:flex-row sm:gap-5 w-[90%] bg-bgred font-sans mx-auto rounded-md justify-evenly items-center p-1">
