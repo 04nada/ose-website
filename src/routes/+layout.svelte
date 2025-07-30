@@ -5,8 +5,8 @@
 </script>
 
 <div
-  class="relative h-scroll bg-cover bg-top bg-no-repeat bg-white"
-  
+  class="relative h-scroll bg-cover bg-top bg-no-repeat bg-[#DDDDDD]"
+  style="background-image: url('/backup-background.png')"
 >
 
 	{@render children()}

@@ -22,7 +22,7 @@
 <div>
     
     {#if page.url.pathname !== '/'}
-        <div class="top-0 z-50 bg-[#E5E1E1]/0 px-20 py-3">
+        <div class="top-0 z-50 bg-[#7A1618] px-20 py-3">
             <img
                 src="/ose-logo.png"
                 alt="OSE Logo"
@@ -32,7 +32,7 @@
     {/if}
 
     
-    <nav>
+    <nav class= "pt-5">
     {#if scroll<=100}
         <div class="hidden sm:flex sm:flex-row sm:gap-5 w-[80%] bg-bggreen/85 backdrop-blur-xs font-sans mx-auto rounded-md justify-evenly items-center p-2 shadow-lg" transition:fly={{ y:-50, duration:250 }}>
             <NavItem navName="Home" route="/"/>
