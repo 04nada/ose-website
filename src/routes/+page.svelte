@@ -5,7 +5,7 @@
 
 
 <div
-	class="flex bg-cover w-full h-[1020px] bg-top bg-no-repeat bg-[url(/backup-background.png)]"
+	class="bg-fixed w-full bg-cover h-[1020px] bg-center bg-no-repeat bg-[url(/backup-background.png)]"
 	>
 
 		<img
@@ -19,8 +19,11 @@
 		style="font-family: 'Playfair'; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);"
 	>
    Welcome to the Office<br />
-    of Student Ethics!
+    for Student Ethics!
   		</div>
+	
+	<Nav />
+	
 	</div>
 
 
@@ -51,7 +54,7 @@
 
 </div>
 
-<Nav />
+
 
 
 
