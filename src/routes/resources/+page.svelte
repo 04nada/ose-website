@@ -16,35 +16,53 @@
 
 <Nav />
 
-<div class="flex w-[720px] flex-col gap-6 mx-auto mt-5 font-display">
-    <Tabs.Root value="codeOfStudentConduct">
-        <Tabs.List class="mx-auto">
-            <Tabs.Trigger value="codeOfStudentConduct">2012 Code of Student Conduct</Tabs.Trigger>
-        </Tabs.List>
+<div class="hidden sm:block">
+    <div class="flex w-[720px] flex-col gap-6 mx-auto mt-5 font-display">
+        <Tabs.Root value="codeOfStudentConduct">
+            <Tabs.List class="mx-auto">
+                <Tabs.Trigger value="codeOfStudentConduct">2012 Code of Student Conduct</Tabs.Trigger>
+            </Tabs.List>
 
-        <Tabs.Content value="codeOfStudentConduct">
-            <Card.Root class="flex-auto">
-                <Card.Header>
-                    <Card.Title>2012 Code of Student Conduct</Card.Title>
+            <Tabs.Content value="codeOfStudentConduct">
+                <Card.Root class="flex-auto">
+                    <Card.Header>
+                        <Card.Title>2012 Code of Student Conduct</Card.Title>
 
-                    <Card.Description>
-                        OSE 太好了！
-                    </Card.Description>
-                </Card.Header>
+                        <Card.Description>
+                            OSE 太好了！
+                        </Card.Description>
+                    </Card.Header>
 
-                <Card.Content class="grid justify-center gap-6">
-                    <div>
-                        <iframe
-                            src={resources['studentconduct2012'].embedSrc}
-                            width=640 height=820 
-                            frameborder="0" marginheight="0" marginwidth="0"
-                            title={resources['studentconduct2012'].title} 
-                        >
-                            Loading...
-                        </iframe>
-                    </div>
-                </Card.Content>
-            </Card.Root>
-        </Tabs.Content>
-    </Tabs.Root>
+                    <Card.Content class="grid justify-center gap-6">
+                        <div>
+                            <iframe
+                                src={resources['studentconduct2012'].embedSrc}
+                                width=640 height=820 
+                                frameborder="0" marginheight="0" marginwidth="0"
+                                title={resources['studentconduct2012'].title} 
+                            >
+                                Loading...
+                            </iframe>
+                        </div>
+                    </Card.Content>
+                </Card.Root>
+            </Tabs.Content>
+        </Tabs.Root>
+    </div>
+</div>
+
+<div class="block flex sm:hidden flex-row center justify-evenly items-center">
+    <div class="flex flex-col width-restriction space-y-10">
+        <h1 class = "header merriweather-bold">
+            Resources
+        </h1>
+        
+        {#each Object.entries(resources) as [id, resource]}
+            <button class="styled-buttons poppins-light"
+                onclick={() => window.open(resource.embedSrc.replace('?embedded=true', ''), '_blank')}
+            >
+                {resource.title}
+            </button>
+        {/each}
+    </div>
 </div>
