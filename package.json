@@ -60,6 +60,7 @@
 	},
 	"dependencies": {
 		"@apollo/client": "^3.13.8",
-		"axios": "^1.10.0"
+		"axios": "^1.10.0",
+		"lucide-svelte": "^0.534.0"
 	}
 }

@@ -12,6 +12,8 @@
     import { fade, fly } from 'svelte/transition';
 	
 	import { page } from '$app/state';
+    import { Menu } from 'lucide-svelte';
+
 </script>
 
 
@@ -32,21 +34,15 @@
     
     <nav>
     {#if scroll<=100}
-    <div class="hidden sm:flex sm:flex-row sm:gap-5 w-[80%] bg-bggreen/70 backdrop-blur-xs font-sans mx-auto rounded-md justify-evenly items-center p-2" transition:fly={{ y:-50, duration:250 }}>
-        <NavItem navName="Home" route="/"/>
-        <NavItem navName="Forms" route="/forms"/>
-        <NavItem navName="News" route="/news"/>
-        <NavItem navName="Resources" route="/resources"/>
-        <NavItem navName="About Us" route="/about"/>
-        <NavItem navName="Contact Us" route="/contact"/>
-    </div>
+        <div class="hidden sm:flex sm:flex-row sm:gap-5 w-[80%] bg-bggreen/85 backdrop-blur-xs font-sans mx-auto rounded-md justify-evenly items-center p-2 shadow-lg" transition:fly={{ y:-50, duration:250 }}>
+            <NavItem navName="Home" route="/"/>
+            <NavItem navName="Forms" route="/forms"/>
+            <NavItem navName="News" route="/news"/>
+            <NavItem navName="Resources" route="/resources"/>
+            <NavItem navName="About Us" route="/about"/>
+            <NavItem navName="Contact Us" route="/contact"/>
+        </div>
     {/if}
-    <div class="fixed mt-2 ml-2 md:hidden">
-        <button onclick={toggleMobileMenu}>
-            <!-- icon here -->
-            ☰
-        </button>
-    </div>
     
 
     {#if showMobileMenu}
@@ -62,19 +58,29 @@
     </nav>
     
 	{#if scroll>100}
-		<div class="flex flex-row top-0 w-full bg-bgred/85 backdrop-blur-xs py-6 fixed" transition:fly={{ y:-50, duration:250 }}>
-            <div class="w-[40%]">
-                <p class="ml-10 poppins-bold text-lg text-textcolor">
+		<div class="flex flex-row top-0 w-full bg-bgred/85 backdrop-blur-xs py-6 fixed h-[80px] items-center" transition:fly={{ y:-50, duration:250 }}>
+            <div class="w-[35%]">
+                <p class="hidden lg:flex ml-10 poppins-bold text-lg text-textcolor">
                 OFFICE FOR STUDENT ETHICS
                 </p>
+
+                <p class="flex lg:hidden ml-10 poppins-bold text-lg text-textcolor"> 
+                    OSE 
+                </p>
             </div>
-            <div class="hidden sm:flex flex-row w-[60%] ml-5 justify-evenly items-center">
+            <div class="hidden md:flex flex-row w-[65%] ml-5 justify-evenly items-center">
                 <NavItem navName="Home" route="/" />
                 <NavItem navName="Forms" route="/forms" />
                 <NavItem navName="News" route="/news" />
                 <NavItem navName="Resources" route="/resources" />
                 <NavItem navName="About Us" route="/about" />
                 <NavItem navName="Contact Us" route="/contact" />
+            </div>
+
+            <div class="mt-2 ml-auto mr-10 md:hidden z-200">
+                <button onclick={toggleMobileMenu}>
+                    <Menu size={32} color="#e5e1e1" strokeWidth={3} />
+                </button>
             </div>
         </div>
 	{/if}
