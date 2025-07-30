@@ -1,8 +1,8 @@
-<script lang=ts>
+<script lang='ts'>
     import NavItem from "./NavItem.svelte";
 
     let showMobileMenu = $state(false);
-
+    
     function toggleMobileMenu() {
         showMobileMenu = !showMobileMenu;
     }
@@ -12,7 +12,6 @@
     import { fade, fly } from 'svelte/transition';
 	
 	import { page } from '$app/state';
-
 </script>
 
 
@@ -30,8 +29,10 @@
         </div>
     {/if}
 
+    
     <nav>
-    <div class="hidden sm:flex sm:flex-row sm:gap-5 w-[90%] bg-bgred font-sans mx-auto rounded-md justify-evenly items-center p-1">
+    {#if scroll<=100}
+    <div class="hidden sm:flex sm:flex-row sm:gap-5 w-[80%] bg-bggreen/70 backdrop-blur-xs font-sans mx-auto rounded-md justify-evenly items-center p-2" transition:fly={{ y:-50, duration:250 }}>
         <NavItem navName="Home" route="/"/>
         <NavItem navName="Forms" route="/forms"/>
         <NavItem navName="News" route="/news"/>
@@ -39,13 +40,14 @@
         <NavItem navName="About Us" route="/about"/>
         <NavItem navName="Contact Us" route="/contact"/>
     </div>
-
+    {/if}
     <div class="fixed mt-2 ml-2 md:hidden">
         <button onclick={toggleMobileMenu}>
             <!-- icon here -->
             ☰
         </button>
     </div>
+    
 
     {#if showMobileMenu}
         <div class="sm:hidden flex flex-col gap-2 w-[90%] mx-auto bg-bgred text-white p-4 rounded-md mt-2">
@@ -60,7 +62,7 @@
     </nav>
     
 	{#if scroll>100}
-		<div class="flex flex-row top-0 w-full bg-bgred py-6 fixed" transition:fly={{ y:-200, duration:1000 }}>
+		<div class="flex flex-row top-0 w-full bg-bgred/85 backdrop-blur-xs py-6 fixed" transition:fly={{ y:-50, duration:250 }}>
             <div class="w-[40%]">
                 <p class="ml-10 poppins-bold text-lg text-textcolor">
                 OFFICE FOR STUDENT ETHICS

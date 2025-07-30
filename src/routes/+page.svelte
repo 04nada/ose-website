@@ -4,27 +4,27 @@
 </script>
 
 
-<div
-	class="bg-fixed w-full bg-cover h-[1020px] bg-center bg-no-repeat bg-[url(/backup-background.png)]"
-	>
+<div class="w-full bg-cover bg-fixed bg-center bg-no-repeat bg-[url(/backup-background.png)] lg:w-[screen]"
+  style="aspect-ratio: 3334/2228">
 
-		<img
-			src="/backup-logo.png"
-			alt="Logo"
-			class="absolute top-8 left-8 w-150 h-auto z-10"
-		/>
+  <img
+    src="/backup-logo.png"
+    alt="Logo"
+    class="absolute top-8 left-8 w-150 h-auto z-10"
+  />
 
 	<div
-		class="absolute top-1/2 right-50 transform -translate-y-1/2 text-white text-5xl text-left tracking-wide leading-tight"
+		class="absolute top-100 right-50 transform -translate-y-1/2 text-white text-5xl text-left tracking-wide leading-tight"
 		style="font-family: 'Playfair'; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);"
 	>
    Welcome to the Office<br />
     for Student Ethics!
   		</div>
+	<div class="absolute top-150 w-full">
+	<Nav/>
+  </div>
 	
-	<Nav />
-	
-	</div>
+</div>
 
 
 

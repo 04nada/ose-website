@@ -13,7 +13,7 @@
 
 <div class="relative">
     <a class="{className} flex flex-row font-display" href={route}>
-        <p class="sm:font-medium text-textcolor">{navName}</p>
+        <p class="sm:font-bold text-textcolor">{navName}</p>
     </a>
 
     {#if isActive}
