@@ -1,7 +1,5 @@
 <script lang="ts">
     import Nav from "$lib/components/Nav.svelte";
-    import * as Tabs from "$lib/components/ui/tabs/index.js";
-    import * as Card from "$lib/components/ui/card/index.js";
 
     const resources = {
         studentconduct2012: {
@@ -17,7 +15,7 @@
 <Nav />
 
 <div class="mt-4 flex justify-center">
-    <img src="/CodeOfEthics.png" alt="Descriptive text" />
+    <img src="/CodeOfEthics.png" alt="CodeOfEthics" />
 </div>
 
 <!-- Desktop View -->

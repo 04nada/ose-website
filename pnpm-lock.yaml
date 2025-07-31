@@ -14,6 +14,9 @@ importers:
       axios:
         specifier: ^1.10.0
         version: 1.10.0
+      lucide-svelte:
+        specifier: ^0.534.0
+        version: 0.534.0(svelte@5.34.9)
     devDependencies:
       '@eslint/compat':
         specifier: ^1.2.5
@@ -1485,6 +1488,11 @@ packages:
 
   loupe@3.1.4:
     resolution: {integrity: sha512-wJzkKwJrheKtknCOKNEtDK4iqg/MxmZheEMtSTYvnzRdEYaZzmgH976nenp8WdJRdx5Vc1X/9MO0Oszl6ezeXg==}
+
+  lucide-svelte@0.534.0:
+    resolution: {integrity: sha512-O+KAxjoCByulRcwdsm7+dOPbaDbYYD61iipeOXuEIxVs0G+KbdrrMhtAZtPSmvn5fXM96ME4iP8xN+ibSJFzwQ==}
+    peerDependencies:
+      svelte: ^3 || ^4 || ^5.0.0-next.42
 
   lz-string@1.5.0:
     resolution: {integrity: sha512-h5bgJWpxJNswbU7qCrV0tIKQCaS3blPDrqKWx+QxzuzL1zGUzij9XCWLrSLsJPu5t+eWA/ycetzYAO5IOMcWAQ==}
@@ -3391,6 +3399,10 @@ snapshots:
       js-tokens: 4.0.0
 
   loupe@3.1.4: {}
+
+  lucide-svelte@0.534.0(svelte@5.34.9):
+    dependencies:
+      svelte: 5.34.9
 
   lz-string@1.5.0: {}
 
