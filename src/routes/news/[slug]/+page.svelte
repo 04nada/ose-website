@@ -13,7 +13,6 @@
             'year': 'numeric',
         })
     }
-
 </script>
 
 <Nav />
@@ -35,9 +34,7 @@
 					{#each data.images as { src, alt }, i (i)}
 						<Carousel.Item class="basis-1/2 shrink-0">
 							<div class="h-[400px] w-full overflow-hidden rounded-lg shadow-md flex justify-center items-center">
-								<img
-									src={src}
-									alt={alt}
+								<img {src} {alt}
 									class="max-h-full max-w-full object-cover rounded-md"
 								/>
 							</div>
@@ -59,9 +56,3 @@
 		</div>
 	</div>
 </div>
-
-
-
-
-
-
