@@ -1,5 +1,6 @@
 <script lang=ts>
     import Nav from "$lib/components/Nav.svelte";
+    import Footer from "$lib/components/Footer.svelte";
 </script>
 
 <Nav />
@@ -90,6 +91,8 @@
         So again, we ask: <span class="text-[#0A4624] font-extrabold">Who are we when no one is watching?</span> At UP Diliman, the answer is clear: We are ethical agents, shaping not just our futures, but the moral fabric of our university and society.
     </p>
 </div>
+
+<Footer />
 
 
 <style></style>

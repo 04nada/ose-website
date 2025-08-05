@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Nav from "$lib/components/Nav.svelte";
 	import * as Carousel from "$lib/components/ui/carousel/index.js";
+  import Footer from "$lib/components/Footer.svelte";
 </script>
 
 
@@ -54,12 +55,4 @@
 
 </div>
 
-
-
-
-
-
-
-
-
-
+<Footer />

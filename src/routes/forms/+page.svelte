@@ -3,6 +3,7 @@
     import * as Tabs from "$lib/components/ui/tabs/index.js";
     import * as Card from "$lib/components/ui/card/index.js";
     import { Button } from "$lib/components/ui/button/index.js";
+    import Footer from "$lib/components/Footer.svelte";
 
     const forms = {
         oseclearance: {
@@ -118,3 +119,5 @@
         {/each}
     </div>
 </div>
+
+<Footer />
