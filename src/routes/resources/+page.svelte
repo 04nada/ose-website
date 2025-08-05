@@ -36,9 +36,9 @@
 
         <!-- Description on the side -->
         <div class="prose max-w-none text-white">
-            <h2 class="text-xl font-semibold text-white">Code of Student Conduct (2012)</h2>
+            <h2 class="text-xl font-semibold text-[#7A1618] merriweather-bold">Code of Student Conduct (2012)</h2>
 
-            <p>
+            <p class="text-black font-display">
                 This document outlines the behavioral expectations and responsibilities 
                 of students within the university. It includes policies on academic integrity, 
                 conduct in classrooms, and university property, as well as disciplinary procedures.

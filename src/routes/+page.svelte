@@ -31,7 +31,7 @@
 
 <div class="h-screen bg-gradient-to-b from-[#ffffff] to-[#cccccc] text-black flex items-center justify-center pt-16">
 
-  <Carousel.Root class="w-full h-full relative overflow-hidden">
+  <Carousel.Root class="w-full h-full relative overflow-hidden z-10">
     <Carousel.Content class="flex w-full h-full transition-transform duration-500">
       
       <Carousel.Item class="shrink-0 w-full h-full">

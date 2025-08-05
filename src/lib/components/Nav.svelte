@@ -19,10 +19,10 @@
 
 <svelte:window bind:scrollY={scroll}/>
 
-<div>
+<div class="z-200">
     
     {#if page.url.pathname !== '/'}
-        <div class="top-0 z-50 bg-[#7A1618] px-20 py-3">
+        <div class="top-0 z-50 bg-bgred/90 px-20 py-3">
             <img
                 src="/ose-logo.png"
                 alt="OSE Logo"
