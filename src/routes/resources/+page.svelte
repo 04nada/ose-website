@@ -15,7 +15,7 @@
 
 <Nav />
 
-<div class="mt-4 flex justify-center">
+<div class="md:mt-4 flex justify-center">
     <img src="/Resources/CodeOfEthics.png" alt="CodeOfEthics" />
 </div>
 
@@ -51,11 +51,22 @@
 </div>
 
 <!-- Mobile View -->
-<div class="block flex sm:hidden flex-row center justify-evenly items-center">
-    <div class="flex flex-col width-restriction space-y-10">
+<div class="block flex sm:hidden flex-row center justify-evenly items-center bg-bggreen pb-5">
+    <div class="flex flex-col width-restriction space-y-5 m-5 text-[#E5E1E1]">
         <h1 class = "header merriweather-bold">
             Resources
         </h1>
+        <h2 class="text-2xl font-bold [text-shadow:_2px_2px_4px_rgba(0,0,0,0.6)]">
+            Code of Student Conduct (2012)
+        </h2>
+        <p>
+            This document outlines the behavioral expectations and responsibilities 
+            of students within the university. It includes policies on academic integrity, 
+            conduct in classrooms, and university property, as well as disciplinary procedures.
+            <br>
+            <br>
+            Please read thoroughly to understand your rights and obligations.
+        </p>
 
         {#each Object.entries(resources) as [id, resource]}
             <button class="styled-buttons poppins-light"
