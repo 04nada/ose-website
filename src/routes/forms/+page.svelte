@@ -103,9 +103,9 @@
     </div>
 </div>
 
-<div class="block flex sm:hidden lex-row center justify-evenly items-center">
-    <div class="flex flex-col width-restriction space-y-10">
-        <h1 class = "header merriweather-bold">
+<div class="sm:hidden flex flex-col items-center justify-start min-h-screen py-8">
+    <div class="flex flex-col w-full max-w-md px-4 space-y-6">
+        <h1 class = "flex header merriweather-bold justify-center text-[#EDAE1A]">
             Forms
         </h1>
 
