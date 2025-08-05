@@ -36,9 +36,9 @@
                 <Card.Root class="flex w-auto">
                     <Card.Header>
                         <Card.Title>Softcopy of OSE Clearance Application</Card.Title>
-                        <Card.Description>
-                        Nani ga sukiii?
-                        </Card.Description>
+                        <!--<Card.Description>
+                            Optional description of Form
+                        </Card.Description>-->
                     </Card.Header>
 
                     <Card.Content class="grid gap-6">
@@ -63,7 +63,7 @@
                     </Card.Content>
 
                     <!-- <Card.Footer>
-                        <Button>Save changes</Button>
+                        Optional Footer of form
                     </Card.Footer> -->
                 </Card.Root>
             </Tabs.Content>
@@ -73,9 +73,9 @@
                     <Card.Header>
                         <Card.Title>Hardcopy Request of Other Documents</Card.Title>
 
-                        <Card.Description>
-                        Choko Minto! Yori mo anata!?    
-                        </Card.Description>
+                        <!--<Card.Description>
+                            Optional description of Form
+                        </Card.Description>-->
                     </Card.Header>
 
                     <Card.Content class="grid gap-6">
@@ -99,9 +99,9 @@
                         </div>
                     </Card.Content>
 
-                    <Card.Footer>
-                        <Button>Save password</Button>
-                    </Card.Footer>
+                    <!-- <Card.Footer>
+                        Optional Footer of form
+                    </Card.Footer> -->
                 </Card.Root>
             </Tabs.Content>
         </Tabs.Root>
