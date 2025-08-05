@@ -1,23 +1,18 @@
-node_modules
+### Output
+/.svelte-kit/
+/build/
+/node_modules/
+/vendor/
 
-# Output
-.output
-.vercel
-.netlify
-.wrangler
-/.svelte-kit
-/build
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Env
+### Env
 .env
 .env.*
 !.env.example
 !.env.test
 
-# Vite
-vite.config.js.timestamp-*
-vite.config.ts.timestamp-*
+### WordPress
+# ignore everything except /wp-content/plugins/ and /wp-content/themes/
+# todo: ignore plugins/themes EXCEPT those which are actually in use
+public/wordpress
+!public/wordpress/wp-content/plugins/
+!public/wordpress/wp-content/themes/
