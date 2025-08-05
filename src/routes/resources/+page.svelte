@@ -15,7 +15,7 @@
 <Nav />
 
 <div class="mt-4 flex justify-center">
-    <img src="/CodeOfEthics.png" alt="CodeOfEthics" />
+    <img src="/Resources/CodeOfEthics.png" alt="CodeOfEthics" />
 </div>
 
 <!-- todo: make this dynamic for more resources in the future (in theory) -->

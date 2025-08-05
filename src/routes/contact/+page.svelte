@@ -27,12 +27,12 @@
 
 <Nav />
 
-<img src="/CodeOfEthics.png" alt="Code Of Ethics" class="mt-4 flex flex-row justify-center">
+<img src="/Resources/CodeOfEthics.png" alt="Code Of Ethics" class="mt-4 flex flex-row justify-center">
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 m-5">
     <div class="flex flex-col items-start p-2">
         <h1 class="text-2xl merriweather-medium text-[#7A1618]">Meet the Team</h1>
-        <img src="/StatueGroupie.jpg" alt="The team in front of the statue of Vinzons Hall" class="flex mt-5">
+        <img src="/ContactUs/StatueGroupie.jpg" alt="The team in front of the statue of Vinzons Hall" class="flex mt-5">
     </div>
     <div class="ml-5 space-y-5">
         <div class="mt-13"></div>
@@ -47,8 +47,8 @@
         </div>
 
         <div class="grid grid-cols-2 md:grid-cols-2 gap-4 m-4">
-            <img bind:this={img1} src="/OblationGroupie.jpg" alt="The team standing in front of Quezon Hall" class="flex w-auto object-contain">
-            <img bind:this={img2} src="/Collage.jpg" alt="Collage" class="flex w-auto object-contain">
+            <img bind:this={img1} src="/ContactUs/OblationGroupie.jpg" alt="The team standing in front of Quezon Hall" class="flex w-auto object-contain">
+            <img bind:this={img2} src="/ContactUs/Collage.jpg" alt="Collage" class="flex w-auto object-contain">
         </div>
     </div>
 </div>
