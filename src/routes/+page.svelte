@@ -49,8 +49,8 @@
 
     </Carousel.Content>
 
-    <Carousel.Previous class="absolute left-5 z-20 bg-black/50 text-white p-2 rounded-full hover:bg-black/70" />
-    <Carousel.Next class="absolute right-5 z-20 bg-black/50 text-white p-2 rounded-full hover:bg-black/70" />
+    <Carousel.Previous class="left-5 z-20 bg-black/50 text-white p-2 rounded-full hover:bg-black/70" />
+    <Carousel.Next class="right-5 z-20 bg-black/50 text-white p-2 rounded-full hover:bg-black/70" />
   </Carousel.Root>
 
 </div>
