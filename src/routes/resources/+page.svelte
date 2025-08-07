@@ -37,7 +37,7 @@
 
         <!-- Description on the side -->
         <div class="prose max-w-none text-white">
-            <h2 class="text-xl font-semibold text-[#7A1618] merriweather-bold">Code of Student Conduct (2012)</h2>
+            <h2 class="text-xl font-semibold text-[#7A1618] merriweather-bold">2012 Code of Student Conduct</h2>
 
             <p class="text-black font-display">
                 This document outlines the behavioral expectations and responsibilities 
@@ -57,7 +57,7 @@
             Resources
         </h1>
         <h2 class="text-2xl font-bold [text-shadow:_2px_2px_4px_rgba(0,0,0,0.6)]">
-            Code of Student Conduct (2012)
+            2012 Code of Student Conduct
         </h2>
         <p>
             This document outlines the behavioral expectations and responsibilities 
