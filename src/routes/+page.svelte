@@ -15,7 +15,7 @@
   />
 
 	<div
-		class="absolute top-100 right-50 transform -translate-y-1/2 text-white text-5xl text-left tracking-wide leading-tight"
+		class="text-3xl left-10 md:left-auto absolute top-50 md:top-100 md:right-50 transform -translate-y-1/2 text-white md:text-5xl text-left tracking-wide leading-tight"
 		style="font-family: 'Playfair'; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);"
 	>
    Welcome to the Office<br />

@@ -46,7 +46,7 @@
     
 
     {#if showMobileMenu}
-        <div class="sm:hidden flex flex-col gap-2 w-[90%] mx-auto bg-bgred text-white p-4 rounded-md mt-2">
+        <div class="fixed top-50 sm:hidden flex flex-col gap-2 w-[90%] mx-auto bg-bgred text-white p-4 rounded-md mt-2">
         <NavItem navName="Home" route="/" />
         <NavItem navName="Forms" route="/forms" />
         <NavItem navName="News" route="/news" />
