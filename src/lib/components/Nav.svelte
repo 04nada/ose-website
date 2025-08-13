@@ -58,7 +58,7 @@
     </nav>
     
 	{#if scroll>100}
-		<div class="flex flex-row top-0 w-full bg-bgred/85 backdrop-blur-xs py-6 fixed h-[80px] items-center" transition:fly={{ y:-50, duration:250 }}>
+		<div class="flex flex-row top-0 w-full bg-bgred/85 backdrop-blur-xs py-6 fixed h-[80px] items-center z-200" transition:fly={{ y:-50, duration:250 }}>
             <div class="w-[35%]">
                 <p class="hidden lg:flex ml-10 poppins-bold text-lg text-textcolor">
                 OFFICE FOR STUDENT ETHICS
