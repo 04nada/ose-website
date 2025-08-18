@@ -2,17 +2,32 @@
 	import Nav from "$lib/components/Nav.svelte";
 	import * as Carousel from "$lib/components/ui/carousel/index.js";
   import Footer from "$lib/components/Footer.svelte";
+      import { Menu } from 'lucide-svelte';
+
+          let showMobileMenu = $state(false);
+
+      function toggleMobileMenu() {
+        showMobileMenu = !showMobileMenu;
+    }
+
 </script>
 
 
 <div class="w-full bg-cover bg-fixed bg-center bg-no-repeat bg-[url(/backup-background.png)] lg:w-[screen]"
   style="aspect-ratio: 3334/2228">
 
-  <div class="pt-8 pl-8 w-150 h-auto z-10">
+  <div class="flex flex-row pt-8 pl-8 w-150 h-auto z-10">
     <img
       src="/backup-logo.png"
       alt="Logo"
+      class="w-[60%] sm:w-full object-contain" 
     /> 
+    <div class="flex mt-2 ml-auto mr-10 md:hidden z-200">
+                <button onclick={toggleMobileMenu}>
+                    <Menu size={32} color="#e5e1e1" strokeWidth={3} />
+                </button>
+    </div>
+    
   </div>
 
 	<div
