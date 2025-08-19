@@ -1,5 +1,7 @@
 <script lang="ts">
 	import Nav from "$lib/components/Nav.svelte";
+  import NavItem from "$lib/components/NavItem.svelte";
+
 	import * as Carousel from "$lib/components/ui/carousel/index.js";
   import Footer from "$lib/components/Footer.svelte";
       import { Menu } from 'lucide-svelte';
@@ -10,6 +12,14 @@
         showMobileMenu = !showMobileMenu;
     }
 
+        const navLinks = [
+        { name: "Home", route: "/" },
+        { name: "Forms", route: "/forms" },
+        { name: "News", route: "/news" },
+        { name: "Resources", route: "/resources" },
+        { name: "About Us", route: "/about" },
+        { name: "Contact Us", route: "/contact" }
+    ];
 </script>
 
 
@@ -30,6 +40,14 @@
     
   </div>
 
+    {#if showMobileMenu}
+        <div class="fixed top-50 sm:hidden flex flex-col gap-2 w-[90%] mx-auto bg-bgred text-white p-4 rounded-md mt-2">
+            {#each navLinks as {name, route}}
+                <NavItem navName={name} route={route} />
+            {/each}
+        </div>
+    {/if}
+    
 	<div
 		class="pt-50 pl-10 transform text-white text-5xl text-left tracking-wide leading-tight"
 		style="font-family: 'Playfair'; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);"
